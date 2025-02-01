@@ -1,0 +1,33 @@
+.header__content {
+  max-width: 984px;
+  text-align: center;
+  margin: auto;
+}
+
+.header__content_title {
+  width: 720px;
+  height: 200px;
+  padding-top: 194px;
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 100px;
+  color: white;
+  font-size: 96px;
+  font-weight: 900;
+}
+
+.header__description {
+  width: 720px;
+  height: 72px;
+  margin-top: 31px;
+  margin-bottom: 64px;
+  font-family: "Inter";
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+}
+
+.header__content_image {
+  max-width: 984px;
+  max-height: 615px;
+  object-fit: contain;
+}
