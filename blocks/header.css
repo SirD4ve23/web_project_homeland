@@ -1,33 +1,72 @@
-.header__content {
-  max-width: 984px;
-  text-align: center;
-  margin: auto;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header__content_title {
-  width: 720px;
-  height: 200px;
-  padding-top: 194px;
-  font-family: "Inter", Arial, sans-serif;
-  line-height: 100px;
-  color: white;
+.header__logo {
+  max-width: 250px;
+  margin-top: 34px;
+  padding-bottom: 92px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  max-width: 720px;
+  font-family: "Inter-Black", sans-serif;
   font-size: 96px;
   font-weight: 900;
+  margin: 0 auto;
+  line-height: 1;
+  text-align: center;
 }
 
 .header__description {
-  width: 720px;
-  height: 72px;
-  margin-top: 31px;
-  margin-bottom: 64px;
-  font-family: "Inter";
+  max-width: 720px;
+  font-family: "Inter-Regular", sans-serif;
   font-size: 30px;
   line-height: 36px;
-  color: white;
+  margin-bottom: 64px;
+  text-align: center;
 }
 
-.header__content_image {
-  max-width: 984px;
-  max-height: 615px;
-  object-fit: contain;
+.header__content-image {
+  max-width: 990px;
+  margin: auto;
+}
+
+.header__image {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .header__logo {
+    max-width: 190px;
+    padding-bottom: 50px;
+  }
+
+  .header__title {
+    max-width: 220px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .header__subheading {
+    max-width: 290px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .header__title {
+    max-width: 530px;
+    font-size: 75px;
+    line-height: 1;
+  }
 }
