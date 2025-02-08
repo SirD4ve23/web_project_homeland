@@ -21,8 +21,8 @@
   max-width: 460px;
   margin-top: 0;
   margin-bottom: 0;
-  grid-column: 1/2;
-  grid-row: 1;
+  /* grid-column: 1/2;
+  grid-row: 1; */
 }
 
 .places__image-item {
@@ -60,7 +60,7 @@
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px #00000040;
   border-radius: 5px;
@@ -81,50 +81,6 @@
   margin: 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 544px) {
-  .places {
-    max-width: 320px;
-    gap: 50px;
-    margin: 0 auto 65px;
-  }
-
-  .places__content {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 0fr) 50px;
-    grid-gap: 30px 0;
-  }
-
-  .places__header {
-    font-size: 32px;
-    line-height: 35px;
-  }
-
-  .places__image {
-    max-width: 320px;
-    max-height: 320px;
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .places__button {
-    max-width: 320px;
-    font-size: 14px;
-    grid-row: 6;
-  }
-
-  .places__link {
-    padding: 0;
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .places__description {
-    max-width: 290px;
-    grid-column: 1;
-    grid-row: 4;
-  }
-}
-
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .places {
     max-width: 720px;
@@ -132,7 +88,7 @@
   }
 
   .places__content {
-    grid-template-rows: 90px 1fr repeat(2, 50px);
+    /* grid-template-rows: 90px 1fr repeat(2, 50px); */
   }
 
   .places__header {
@@ -145,14 +101,14 @@
     padding: 0;
   }
 
-  .places__image {
+  .places__image-item {
     max-width: 340px;
     max-height: 340px;
   }
 
   .places__button {
-    grid-column: 1 / 4;
-    grid-row: 4;
+    /* grid-column: 1 / 4;
+    grid-row: 4; */
     font-size: 14px;
   }
 
@@ -163,7 +119,55 @@
   .places__description {
     max-width: 352px;
     font-size: 12px;
-    grid-column: span 3;
-    grid-row: 2 / 5;
+    /* grid-column: span 3;
+    grid-row: 2 / 5; */
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .places {
+    max-width: 320px;
+    gap: 50px;
+    margin: 0 auto 65px;
+  }
+
+  .places__content {
+    /* grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 0fr) 50px;
+    grid-gap: 30px 0; */
+    display: block;
+  }
+
+  .places__header {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+
+  .places__image-item {
+    max-width: 320px;
+    max-height: 320px;
+    margin-top: 30px;
+    /* grid-column: 1;
+    grid-row: 3; */
+  }
+
+  .places__button {
+    max-width: 320px;
+    font-size: 14px;
+    grid-row: 6;
+    margin-top: 30px;
+  }
+
+  .places__link {
+    padding: 0;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .places__description {
+    max-width: 290px;
+    grid-column: 1;
+    grid-row: 4;
   }
 }
