@@ -81,7 +81,7 @@
   margin: 0;
 }
 
-@media screen and (min-width: 545px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .places {
     max-width: 720px;
     gap: 72px;
@@ -124,7 +124,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 544px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .places {
     max-width: 320px;
     gap: 50px;
@@ -142,6 +142,7 @@
     font-size: 32px;
     line-height: 35px;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .places__image-item {
