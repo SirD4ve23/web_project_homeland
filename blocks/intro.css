@@ -67,4 +67,8 @@
     font-size: 45px;
     line-height: 0.8;
   }
+
+  .intro {
+    padding: 0 24px;
+  }
 }
