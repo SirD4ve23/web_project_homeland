@@ -140,6 +140,7 @@
     grid-template-rows: repeat(5, 0fr) 50px;
     grid-gap: 30px 0; */
     display: block;
+    padding: 0 14px;
   }
 
   .places__header {
